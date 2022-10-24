@@ -326,12 +326,18 @@
               </a>
             </li>
           </ul>
-        </div>
-        <div class="subscribe">
+          <form class="subscribe">
           <p class="subscribe-text">Підпишіться на розсилку</p>
           <div class="subscribe-submit-items">
-            <label>
-              <input class="email-input" type="text" placeholder="E-mail" />
+            <label for="user-email">
+              <input
+                class="email-input"
+                type="email"
+                placeholder="E-mail"
+                name="user-email"
+                id="user-email"
+                required
+              />
             </label>
             <button class="subscribe-submit-btn" type="submit">
               Підписатися
@@ -340,9 +346,10 @@
               </svg>
             </button>
           </div>
-        </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
   </body>
 </html>
+
